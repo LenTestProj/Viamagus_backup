@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background: rgb(50, 139, 168);
+  padding: 0.4%;
+}
+
+.rightSection {
+  display: flex;
+  align-items: right;
+  font-size: 0.98rem;
+  text-style: bold;
+  font-weight: bold;
+}
+
+.newPostLink {
+  display: flex;
+  justify-content: center;
+  alignitems: center;
+  margin-right: 2%;
+  /* padding: 3%; */
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+  background: rgb(211, 223, 227);
+  color: rgb(24, 27, 28);
+}
+
+.cartLink {
+  margin-left: 2%;
+  padding: 3%;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+  background: rgb(211, 223, 227);
+  color: rgb(24, 27, 28);
+}
+
+.homeLink {
+  text-decoration: none;
+  color: rgb(211, 223, 227);
+}
+
+.activeLink {
+  text-decoration: underline;
+}
+
+.leftSection {
+}
+
+.newPostSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 7%;
+}
+
+.cartIcon {
+  width: 25px;
+  height: 25px;
+  background: rgb(211, 223, 227);
+}
+
+.cartItemSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding-left: 2%;
+  border: 2px solid green;
+}
+
+.cartSection {
+  display: flex;
+}
+
+.totalCartItemsQuantity {
+  background: white;
+}
+
+@media (max-width: 600px) {
+  .newPostButton {
+    padding: 2%;
+  }
+
+  .cartButton {
+    padding: 2%;
+  }
+
+  .rightSection {
+    width: auto;
+  }
+}

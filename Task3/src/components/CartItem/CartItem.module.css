@@ -1,0 +1,103 @@
+.cartItemContainer {
+  margin: 0.6em;
+  border: 1px solid rgb(211, 223, 227, 0.7);
+  border-radius: 10px;
+  padding: 1.4% 2%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.cartItemTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin: 0.4em 0;
+  border-bottom: 2px dashed rgb(211, 223, 227, 0.3);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+
+.cartItemButton {
+  padding: 1.2%;
+  color: white;
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: rgb(37, 60, 97);
+  border: 0.2px solid #000;
+  border-radius: 5px;
+  width: 16%;
+  cursor: pointer;
+}
+
+.cartItemMiniSection {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.9%;
+}
+
+.priceSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantitySection {
+  display: flex;
+  flex-direction: column;
+}
+
+.deleteItemSection {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.deleteItemButton {
+  font-size: 70%;
+  padding: 6%;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.quantiyButtons {
+  display: flex;
+  margin-top: 10%;
+  border: 1px solid white;
+  /* overflow: hidden; */
+}
+
+.quantityAddButton {
+  font-size: 1.1rem;
+  background: rgb(50, 139, 168);
+  flex: 1;
+  cursor: pointer;
+}
+
+.quantitySubtractButton {
+  font-size: 1.1rem;
+  background: rgb(50, 139, 168);
+  flex: 1;
+  cursor: pointer;
+}
+
+.quantityValue {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.priceValue {
+  padding-top: 10%;
+}
+
+@media (max-width: 700px) {
+  .cartItemButton {
+    width: 28%;
+  }
+  .cartItemTitle {
+    font-size: 1.1rem;
+  }
+}
