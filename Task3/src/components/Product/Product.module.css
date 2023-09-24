@@ -1,5 +1,5 @@
 .productItemContainer {
-  margin: 0.6em;
+  margin: 0.7em;
   border: 1px solid #000;
   border-radius: 10px;
   padding: 2% 2%;
@@ -26,10 +26,22 @@
   cursor: pointer;
 }
 
+.deleteProductButton {
+  padding: 1.2%;
+  color: white;
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: rgb(235, 45, 45);
+  border: 0.2px solid #000;
+  border-radius: 5px;
+  width: 26%;
+  cursor: pointer;
+}
+
 .productItemMiniSection {
   font-size: 60%;
   display: flex;
-  width: 80%;
+  width: 82%;
   justify-content: space-between;
   padding-top: 3%;
 }

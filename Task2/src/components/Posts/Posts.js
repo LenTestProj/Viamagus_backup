@@ -33,7 +33,7 @@ const Posts = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        paddingTop: "2px",
+        paddingTop: "3rem",
       }}
     >
       <h2>Posts</h2>

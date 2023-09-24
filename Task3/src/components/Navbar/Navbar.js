@@ -22,9 +22,7 @@ const Navbar = () => {
           }}
           to="/add-product"
         >
-          <div className={classes.newPostSection}>
-            <p style={{ width: "80%" }}>Add New Post</p>
-          </div>
+          <p className={classes.newPostSection}>Add Product</p>
         </NavLink>
         <NavLink
           className={({ isActive }) => {
@@ -35,13 +33,8 @@ const Navbar = () => {
           to={"/cart"}
         >
           <div className={classes.cartSection}>
-            <span
-              style={{
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              Your cart
+            <span className={classes.cartText}>
+              <p>Your Cart</p>
             </span>
             <span className={classes.cartItemSection}>
               <p className={classes.totalCartItemsQuantity}>{totalCartItems}</p>

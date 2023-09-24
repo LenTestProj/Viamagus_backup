@@ -50,15 +50,16 @@
 .deleteItemSection {
   display: flex;
   flex-direction: column;
-  padding: 1%;
+  justify-content: flex-end;
 }
 
 .deleteItemButton {
-  font-size: 70%;
+  font-size: 60%;
   padding: 6%;
   background: red;
   color: white;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .quantiyButtons {
@@ -70,14 +71,14 @@
 
 .quantityAddButton {
   font-size: 1.1rem;
-  background: rgb(50, 139, 168);
+  background: rgb(211, 223, 227);
   flex: 1;
   cursor: pointer;
 }
 
 .quantitySubtractButton {
   font-size: 1.1rem;
-  background: rgb(50, 139, 168);
+  background: rgb(211, 223, 227);
   flex: 1;
   cursor: pointer;
 }

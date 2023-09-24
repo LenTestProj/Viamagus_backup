@@ -4,8 +4,8 @@
   justify-content: center;
 }
 
-.newProductFormContainer {
-  border: 1px solid rgb(211, 223, 227, 0.7);
+.newPostFormContainer {
+  border: roduc 1px solid rgb(211, 223, 227, 0.7);
   border-radius: 10px;
   padding: 1.4% 2%;
   display: flex;
@@ -14,10 +14,10 @@
   /* align-items: center; */
 }
 
-.newProductFormTitle {
+.newPostFormTitle {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  margin: 0.4em 0;
+  font-size: 1.4rem;
+  margin: 0.2em 0;
   border-bottom: 2px dashed rgb(211, 223, 227, 0.3);
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
   padding: 2.5%;
 }
 
-.priceSection {
+.descriptionSection {
   display: flex;
   border-bottom: 2px solid rgb(211, 223, 227, 0.3);
   padding: 2.5%;
@@ -56,7 +56,7 @@
 
 .nameInputField {
   background: rgb(211, 223, 227);
-  font-size: 1.2em;
+  font-size: 1em;
   width: 100%;
 }
 
@@ -65,17 +65,18 @@
   font-size: 1.2rem;
 }
 
-.priceInput {
+.descriptionInput {
   flex: 2;
 }
 
-.priceInputField {
+.descriptionInputField {
   background: rgb(211, 223, 227);
   font-size: 1.2rem;
   width: 100%;
+  height: 10rem;
 }
 
-.priceText {
+.descriptionText {
   flex: 1;
   font-size: 1.2rem;
 }
@@ -88,4 +89,26 @@
 .disabled {
   cursor: not-allowed;
   background: rgb(211, 223, 227);
+}
+
+@media (max-width: 600px) {
+  .newPostFormContainer {
+    width: 80%;
+  }
+
+  .nameInputField {
+    font-size: 0.8em;
+  }
+
+  .nameText {
+    font-size: 1.1rem;
+  }
+
+  .nameInputField {
+    margin-bottom: 3%;
+  }
+
+  .descriptionInputField {
+    font-size: 0.6em;
+  }
 }

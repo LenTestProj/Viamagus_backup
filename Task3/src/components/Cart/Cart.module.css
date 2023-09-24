@@ -2,18 +2,79 @@
   display: flex;
   flex-direction: column;
   alignitems: center;
-  padding-top: 5%;
+  padding-top: 4rem;
 }
 
 .list {
   padding: 0;
   list-style: none;
   overflow: auto;
-  height: 88vh;
+  /* height: 88vh; */
 }
 
 .header {
   display: flex;
   justify-content: center;
   text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-top: 10%;
+  padding-top: 2%;
+  border-top: 1px dotted rgb(211, 223, 227, 0.7);
+}
+
+.addDiscountSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.addDiscountButton {
+  cursor: pointer;
+}
+.addDiscountButton:disabled {
+  cursor: not-allowed;
+  background: rgb(211, 223, 227, 0.6);
+}
+
+.updateDiscountSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.form {
+  border: 1px solid rgb(211, 223, 227, 0.7);
+  padding: 2%;
+}
+
+.discountCancelUpdateButtonSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.discountCancelButton {
+  background: red;
+  color: white;
+  padding: 1%;
+  margin-right: 2%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.discountUpdateButton {
+  background: blue;
+  color: white;
+  padding: 1%;
+  margin-left: 2%;
+  border-radius: 4px;
+  cursor: pointer;
 }

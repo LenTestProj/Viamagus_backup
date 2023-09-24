@@ -1,0 +1,94 @@
+.main {
+  padding: 2;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  width: 60%;
+  background: white;
+  z-index: 10;
+}
+
+.overlay {
+  padding: 2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgb(237, 228, 228, 0.3);
+  z-index: 10;
+}
+
+.row {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 0.7rem;
+  display: flex;
+  border-bottom: 1px dotted gray;
+  color: black;
+  padding-left: 2%;
+}
+
+.row:first-child {
+  display: flex;
+  justify-content: between;
+}
+
+.row:last-child {
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
+.button {
+  background: orange;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.showModal {
+  animation-name: displayModal;
+  animation-duration: 1s;
+}
+
+.hideModal {
+  animation: removeModal;
+  animation-duration: 1s;
+}
+
+@keyframes displayModal {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(20%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes removeModal {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(20%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-50);
+    opacity: 0;
+  }
+}
+
+/* .closeButton {
+  @apply pt-1 pr-1 cursor-pointer;
+} */
