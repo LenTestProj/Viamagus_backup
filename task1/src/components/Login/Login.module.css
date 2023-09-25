@@ -1,0 +1,11 @@
+.container {
+  @apply p-1;
+}
+
+.backgroundImage {
+  @apply w-full h-[17rem];
+}
+
+.backgroundSection {
+  @apply h-[27rem] md:h-[37rem] bg-white mt-40 md:mt-32;
+}

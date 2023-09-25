@@ -40,6 +40,7 @@ const Product = ({ product }) => {
 
   const addProductToCart = (event) => {
     event.preventDefault();
+    console.log(product);
     dispatch(addToCart(product));
   };
 
@@ -63,7 +64,9 @@ const Product = ({ product }) => {
           itemToBeDeleted={product}
         />
       )}
-      <p className={classes.productItemTitle}>{product.name}</p>
+      <div className={classes.productItemTitleSection}>
+        <p className={classes.productItemTitle}>{product.name}</p>
+      </div>
       <section className={classes.productItemMiniSection}>
         <p style={{ fontSize: "1.2rem" }}>USD: {product.price}</p>
         <button

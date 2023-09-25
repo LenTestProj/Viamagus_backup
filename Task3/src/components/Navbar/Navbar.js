@@ -37,7 +37,9 @@ const Navbar = () => {
               <p>Your Cart</p>
             </span>
             <span className={classes.cartItemSection}>
-              <p className={classes.totalCartItemsQuantity}>{totalCartItems}</p>
+              <p className={classes.totalCartItemsQuantity}>
+                {Number(totalCartItems)}
+              </p>
               <img
                 src="https://i.pinimg.com/originals/f2/12/4e/f2124e83e9fd8ddeb31ac7cdb59f544c.jpg"
                 alt="test.jpg"

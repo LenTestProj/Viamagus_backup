@@ -8,7 +8,7 @@ const Products = () => {
 
   return (
     <div className={classes.container}>
-      <h2 className={classes.header}>Products</h2>
+      <h1 className={classes.header}>Products</h1>
       <ul className={classes.list}>
         {products.map((prod, i) => (
           <li key={i}>

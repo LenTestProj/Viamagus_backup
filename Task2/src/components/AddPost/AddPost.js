@@ -16,12 +16,12 @@ const AddPost = () => {
   const nameInputHasError =
     postName.length === 0 && inputIsTouched.isNameInputTouched;
   const descriptionInputHasError =
-    !(postdescription.length > 0 && postdescription.length < 300) &&
+    !(postdescription.length > 0 && postdescription.length < 1000) &&
     inputIsTouched.isdescriptionInputTouched;
   const submitButtonIsActive =
     postName.length > 0 &&
     postdescription.length > 0 &&
-    postdescription.length < 300;
+    postdescription.length < 1000;
 
   const AddPost = (event) => {
     event.preventDefault();
@@ -83,7 +83,7 @@ const AddPost = () => {
                 value={postdescription}
                 className={classes.descriptionInputField}
                 minLength={0}
-                maxLength={300}
+                maxLength={1000}
                 onChange={(event) =>
                   setPostdescription((prev) => event.target.value)
                 }
